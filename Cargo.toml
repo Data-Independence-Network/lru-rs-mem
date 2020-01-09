@@ -1,14 +1,8 @@
 [package]
-name = "lru"
-version = "0.4.3"
-authors = ["Jerome Froelich <jeromefroelic@hotmail.com>"]
-description = "A LRU cache implementation"
-homepage = "https://github.com/jeromefroe/lru-rs"
-repository = "https://github.com/jeromefroe/lru-rs.git"
-documentation = "https://docs.rs/lru/"
+name = "lru_rs_mem"
+version = "0.1.0"
+description = "A Free System RAM capped LRU cache implementation"
 readme = "README.md"
-license = "MIT"
-keywords = ["LRU", "cache"]
 
 [features]
 default = ["hashbrown"]
@@ -19,3 +13,4 @@ hashbrown = { version = "0.6.*", optional = true }
 
 [dev-dependencies]
 scoped_threadpool = "0.1.*"
+sysinfo = "0.10.3"
